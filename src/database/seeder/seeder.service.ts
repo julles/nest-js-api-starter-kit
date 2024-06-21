@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { SeederEntity } from '../entities/seeder.entity';
 import { Repository } from 'typeorm';
-import { SeederInferface } from './seeder.interface';
+import { SeederInterface } from './seeder.interface';
 
 @Injectable()
 export class SeederService {
@@ -11,7 +11,7 @@ export class SeederService {
     private seederRepository: Repository<SeederEntity>,
   ) {}
 
-  registers(): SeederInferface[] {
+  registers(): SeederInterface[] {
     return [];
   }
 

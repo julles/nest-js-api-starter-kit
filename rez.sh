@@ -20,10 +20,10 @@ createSeeder(){
 
   CONTENT=$(cat <<EOF
 import { Injectable } from "@nestjs/common";
-import { SeederInferface } from "../seeder.interface";
+import { SeederInterface } from "../seeder.interface";
 
 @Injectable()
-export class ${CLASS_NAME}Seeder implements SeederInferface {
+export class ${CLASS_NAME}Seeder implements SeederInterface {
 
   constructor() {}
 

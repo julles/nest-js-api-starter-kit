@@ -71,7 +71,7 @@ export class SeederService {
 
 Then register in the register method:
 ``` ts
-registers(): SeederInferface[] {
+registers(): SeederInterface[] {
     return [
       this.testingSeeder
     ];
